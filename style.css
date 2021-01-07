@@ -33,6 +33,11 @@
     justify-content: space-between;
 }
 
+.logo {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
 .toggle {
     position: relative;
     width: 60px;
