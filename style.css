@@ -21,6 +21,27 @@
     z-index: -2;
 }
 
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-size: 30px;
+    background: url("menu.png") no-repeat center;
+    cursor: pointer;
+}
+
 .menu {
     display: none;
 }
