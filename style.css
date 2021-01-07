@@ -43,10 +43,36 @@
     width: 60px;
     height: 60px;
     background-size: 30px;
-    background: url("menu.png") no-repeat center;
+    background: url("https://i.ibb.co/HrfVRcx/menu.png") no-repeat center;
     cursor: pointer;
 }
 
-.menu {
-    display: none;
+.toggle.active {
+    background-size: 25px;
+    background: url("https://i.ibb.co/rt3HybH/close.png") no-repeat center;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #03a9f4;
+    mix-blend-mode: overlay;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
 }
