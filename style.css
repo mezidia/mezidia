@@ -21,6 +21,10 @@
     z-index: -2;
 }
 
+.showcase.active {
+    right: 300px;
+}
+
 .showcase header {
     position: absolute;
     top: 0;
@@ -140,6 +144,17 @@
     transform: scale(0.5) translateY(-15px);
 }
 
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media(max-width: 991px) {
     .showcase, .showcase header {
         padding: 40px;
@@ -150,6 +165,6 @@
     }
 
     .text h3 {
-        
+        font-size: 2em;
     }
 }
