@@ -23,6 +23,7 @@
     background: #111;
     color: #fff;
     z-index: -2;
+    transition: 0.5s;
 }
 
 .showcase.active {
