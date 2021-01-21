@@ -10696,8 +10696,23 @@ button.bg-dark:focus {
   color: #fff !important;
 }
 
+.head-animation {
+  -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
+  transition: color 1s; /* For modern browsers */
+}
+
+.head-animation:hover {
+  color: #bd5d38;
+}
+
 .text-primary {
-  color: #bd5d38 !important;
+  color: #bd5d38;
+  -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
+  transition: color 1s; /* For modern browsers */
+}
+
+.text-primary:hover {
+  color: #343a40;
 }
 
 a.text-primary:hover,
