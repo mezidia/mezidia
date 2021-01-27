@@ -1,9 +1,22 @@
 # mezidia
 
-A general site of organization
+The general site of organization
 
-https://v5.getbootstrap.com/
+## Motivation
+
+Every organization has a website. So I made it too.😊
+
+## Fast usage
+
+Just open the link in the description.
 
 ## Credits
 
-- [YouTube video](https://www.youtube.com/watch?v=8MgpE2DTTKA&feature=youtu.be)
+Links, which inspired you to build this project: 
+
+- [Bootstrap 5](https://v5.getbootstrap.com/)
+- [Bootstrap templates](https://startbootstrap.com/themes)
+
+## License
+
+MIT © [mezidia](https://github.com/mezidia)
