@@ -19,7 +19,7 @@
   <i>Table of contents</i>
 </h2>
 
-- [Motivation 🎖️](#motivation-)
+- [Motivation 🎖️](#motivation-%EF%B8%8F)
 - [Badges 🏅](#badges-)
 - [Code style 📇](#code-style-)
 - [Tech/framework used 🔧](#techframework-used-)
