@@ -1,5 +1,7 @@
 # mezidia
 
+![Screenshot 1](https://raw.githubusercontent.com/mezgoodle/images/master/MezidiaTransparent.png)
+
 The general site of organization
 
 ## Motivation
