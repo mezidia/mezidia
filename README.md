@@ -31,7 +31,7 @@
 
 ## Motivation 🎖️
 
-Every organization has a website. So I made it too.😊
+Every organization has a website. So we made it too.😊
 
 ## Badges 🏅
 
