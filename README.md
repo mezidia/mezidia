@@ -29,8 +29,6 @@
 - [Credits 🧑‍🤝‍🧑](#credits-)
 - [License 🔖](#license-)
 
-
-
 ## Motivation 🎖️
 
 Every organization has a website. So I made it too.😊
