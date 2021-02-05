@@ -33,8 +33,11 @@ def index(request):
         },
 
     ]
+    skills = ['html5', 'css3-alt', 'js-square', 'react', 'node-js', 'npm',
+              'python', 'unity', 'android', 'docker', 'php']
 
     context = {
-        'nav_data': nav_data
+        'nav_data': nav_data,
+        'skills': skills
     }
     return render(request, 'main/index.html', context)
