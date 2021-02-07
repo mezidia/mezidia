@@ -36,9 +36,10 @@ def get_org_members(org_name: str) -> list:
         member_url = member['url']
         member_data = requests.get(member_url).json()
         data.append({
-            'name': member_data['login'],
+            'username': member_data['login'],
+            'name': member_data['name'],
             'img_url': member_data['avatar_url'],
-            'url': member_data['url'],
+            'url': member_data['html_url'],
             'bio': member_data['bio'],
         })
     return data
@@ -65,6 +66,4 @@ def index(request):
         'repos': repos,
         'members': members,
     }
-    print(repos)
-    print(members)
     return render(request, 'main/index.html', context)
