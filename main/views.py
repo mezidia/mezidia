@@ -46,35 +46,13 @@ def get_org_members(org_name: str) -> list:
 
 def index(request):
     nav_data = [
-        {
-            'id': '#about',
-            'text': 'About',
-        },
-        {
-            'id': '#projects',
-            'text': 'Projects',
-        },
-        {
-            'id': '#members',
-            'text': 'Members',
-        },
-        {
-            'id': '#skills',
-            'text': 'Skills',
-        },
-        {
-            'id': '#interests',
-            'text': 'Interests',
-        },
-        {
-            'id': '#awards',
-            'text': 'Awards',
-        },
-        {
-            'id': '#newMembers',
-            'text': 'New members',
-        },
-
+        {'id': '#about', 'text': 'About'},
+        {'id': '#projects', 'text': 'Projects'},
+        {'id': '#members', 'text': 'Members'},
+        {'id': '#skills', 'text': 'Skills'},
+        {'id': '#interests', 'text': 'Interests'},
+        {'id': '#awards', 'text': 'Awards'},
+        {'id': '#newMembers', 'text': 'New members'},
     ]
     skills = ['html5', 'css3-alt', 'js-square', 'react', 'node-js', 'npm',
               'python', 'unity', 'android', 'docker', 'php']
