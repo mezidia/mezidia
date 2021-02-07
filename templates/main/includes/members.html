@@ -1,0 +1,16 @@
+<!-- Members -->
+<section class="resume-section" id="members">
+  <div class="resume-section-content">
+    <h2 class="mb-5">Members</h2>
+    {% for member in members %}
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">{{ member.name }}</h3>
+                <div class="subheading mb-3"><a href="{{ member.url }}" target="blank">@{{ member.username }}</a></div>
+                <div>{{ member.bio }}</div>
+            </div>
+        <img src="{{ member.img_url }}" width="50" height="50" alt="User photo">
+        </div>
+    {% endfor %}
+  </div>
+</section>
