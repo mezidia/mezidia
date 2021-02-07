@@ -1,0 +1,15 @@
+<!-- Projects-->
+<section class="resume-section" id="projects">
+  <div class="resume-section-content">
+    <h2 class="mb-5">Projects</h2>
+    {% for project in projects %}
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <a class="h3 mb-0" href="{{ project.url }}" target="blank">{{ project.name }}</a>
+                <p>{{ project.desc }}</p>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">{{ project.time }}</span></div>
+        </div>
+    {% endfor %}
+  </div>
+</section>
