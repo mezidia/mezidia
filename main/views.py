@@ -57,13 +57,13 @@ def index(request):
     ]
     skills = ['html5', 'css3-alt', 'js-square', 'react', 'node-js', 'npm',
               'python', 'unity', 'android', 'docker', 'php']
-    repos = get_org_repos('mezidia')
+    projects = get_org_repos('mezidia')
     members = get_org_members('mezidia')
 
     context = {
         'nav_data': nav_data,
         'skills': skills,
-        'repos': repos,
+        'projects': projects,
         'members': members,
     }
     return render(request, 'main/index.html', context)
