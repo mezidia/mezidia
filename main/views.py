@@ -10,6 +10,7 @@ def get_org_repos(org_name: str) -> list:
     :return: data: list
     """
     data = []
+    time_format_length = 10
     url = f'https://api.github.com/orgs/{org_name}/repos'
     repos = requests.get(url)
     for repo in repos.json():
@@ -17,7 +18,7 @@ def get_org_repos(org_name: str) -> list:
             'name': repo['name'],
             'url': repo['html_url'],
             'desc': repo['description'],
-            'time': repo['created_at'],
+            'time': repo['created_at'][:time_format_length],
         })
     return data
 
