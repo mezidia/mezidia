@@ -1,6 +1,10 @@
 {% if sent %}
     Your mail has been sended
 {% else %}
+    <p>If you want to be the <strong>new member of this organization</strong>, submit the form below. If you
+        have additional questions, ask @mezgoodle in Telegram or write an email which is in <i>About</i>
+        section.</p>
+    <p class="mb-0">We have no requirements, only <i>desire is important</i>.</p>
     <form class="pt-3" method="post" action="{% url 'form' %}">
         {% csrf_token %}
         {% for field in form %}
