@@ -1,6 +1,8 @@
 from django.shortcuts import render
 import requests
 
+from .forms import EmailForm
+
 
 def get_org_repos(org_name: str) -> list:
     """
@@ -62,6 +64,7 @@ def index(request):
     members = get_org_members('mezidia')
 
     context = {
+        'form': EmailForm(),
         'nav_data': nav_data,
         'skills': skills,
         'projects': projects,
