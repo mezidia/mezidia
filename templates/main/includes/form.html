@@ -1,9 +1,14 @@
-<form class="pt-3" method="post">
-    {% for field in form %}
-        {{ field.errors }}
-        <div class="mb-3">
-            {{ field.label_tag }} {{ field }}
-        </div>
-    {% endfor %}
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+{% if sent %}
+    Your mail has been sended
+{% else %}
+    <form class="pt-3" method="post" action="{% url 'form' %}">
+        {% csrf_token %}
+        {% for field in form %}
+            {{ field.errors }}
+            <div class="mb-3">
+                {{ field.label_tag }} {{ field }}
+            </div>
+        {% endfor %}
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+{% endif %}
