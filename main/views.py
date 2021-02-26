@@ -69,7 +69,7 @@ def send_email(request):
             cd = form.cleaned_data
             subject = f"{cd['name']} wants to join Mezidia"
             message = f"Email: {cd['email']}. \n\rComments: {cd['comments']}"
-            send_mail(subject, message, cd['email'], ['mezgoodle@gmail.com'])
+            send_mail(subject, message, cd['email'], ['mezidiaofficial@gmail.com'])
             sent = True
     else:
         form = EmailForm()
