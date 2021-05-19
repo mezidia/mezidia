@@ -35,6 +35,8 @@
       <Awards
         v-bind:awards="awards"
       />
+      <hr class="m-0" />
+      <Form />
     </div>
   </div>
 </template>
@@ -47,6 +49,7 @@ import Members from '@/components/Members.vue'
 import Skills from '@/components/Skills.vue'
 import Interests from '@/components/Interests.vue'
 import Awards from '@/components/Awards.vue'
+import Form from '@/components/Form.vue'
 import Loader from '@/components/Loader.vue'
 export default {
   name: 'App',
@@ -108,7 +111,7 @@ export default {
     }
   },
   components: {
-    Navbar, About, Projects, Members, Skills, Interests, Awards, Loader
+    Navbar, About, Projects, Members, Skills, Interests, Awards, Form, Loader
   }
 }
 </script>
