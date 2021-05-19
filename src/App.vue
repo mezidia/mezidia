@@ -26,6 +26,10 @@
       />
       <p v-else>No members</p>
       <hr class="m-0" />
+      <Skills
+        v-bind:skills="skills"
+      />
+      <hr class="m-0" />
     </div>
   </div>
 </template>
@@ -35,6 +39,7 @@ import Navbar from '@/components/Navbar.vue'
 import About from '@/components/About.vue'
 import Projects from '@/components/Projects.vue'
 import Members from '@/components/Members.vue'
+import Skills from '@/components/Skills.vue'
 import Loader from '@/components/Loader.vue'
 export default {
   name: 'App',
@@ -83,13 +88,15 @@ export default {
         { link: 'https://t.me/sylvenis', title: 'Maxim Telegram profile', icon_class: 'fab fa-telegram' },
         { link: 'https://www.facebook.com/profile.php?id=100005721694357', title: 'Maxim Facebook profile', icon_class: 'fab fa-facebook-f' }
       ],
+      skills: ['fab fa-html5', 'fab fa-css3-alt', 'fab fa-js-square', 'fab fa-react', 'fab fa-node-js', 'fab fa-npm',
+        'fab fa-python', 'fab fa-unity', 'fab fa-android', 'fab fa-docker', 'fab fa-php'],
       projects: [],
       members: [],
       loading: true
     }
   },
   components: {
-    Navbar, About, Projects, Members, Loader
+    Navbar, About, Projects, Members, Skills, Loader
   }
 }
 </script>
