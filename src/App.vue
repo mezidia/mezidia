@@ -1,15 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1>Hello</h1>
+    <Navbar
+      v-bind:items="navbaritems"
+    />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Navbar from '@/components/Navbar.vue'
 export default {
   name: 'App',
+  data () {
+    return {
+      navbaritems: [
+        { link: '#about', name: 'About' },
+        { link: '#projects', name: 'Projects' },
+        { link: '#members', name: 'Members' },
+        { link: '#skills', name: 'Skills' },
+        { link: '#interests', name: 'Interests' },
+        { link: '#awards', name: 'Awards' },
+        { link: '#newMembers', name: 'New members' }
+      ]
+    }
+  },
   components: {
-    HelloWorld
+    Navbar
   }
 }
 </script>
