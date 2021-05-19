@@ -30,6 +30,8 @@
         v-bind:skills="skills"
       />
       <hr class="m-0" />
+      <Interests />
+      <hr class="m-0" />
     </div>
   </div>
 </template>
@@ -41,6 +43,7 @@ import Projects from '@/components/Projects.vue'
 import Members from '@/components/Members.vue'
 import Skills from '@/components/Skills.vue'
 import Loader from '@/components/Loader.vue'
+import Interests from '@/components/Interests.vue'
 export default {
   name: 'App',
   mounted () {
@@ -96,7 +99,7 @@ export default {
     }
   },
   components: {
-    Navbar, About, Projects, Members, Skills, Loader
+    Navbar, About, Projects, Members, Skills, Interests, Loader
   }
 }
 </script>
