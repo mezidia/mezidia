@@ -32,6 +32,9 @@
       <hr class="m-0" />
       <Interests />
       <hr class="m-0" />
+      <Awards
+        v-bind:awards="awards"
+      />
     </div>
   </div>
 </template>
@@ -42,8 +45,9 @@ import About from '@/components/About.vue'
 import Projects from '@/components/Projects.vue'
 import Members from '@/components/Members.vue'
 import Skills from '@/components/Skills.vue'
-import Loader from '@/components/Loader.vue'
 import Interests from '@/components/Interests.vue'
+import Awards from '@/components/Awards.vue'
+import Loader from '@/components/Loader.vue'
 export default {
   name: 'App',
   mounted () {
@@ -93,13 +97,18 @@ export default {
       ],
       skills: ['fab fa-html5', 'fab fa-css3-alt', 'fab fa-js-square', 'fab fa-react', 'fab fa-node-js', 'fab fa-npm',
         'fab fa-python', 'fab fa-unity', 'fab fa-android', 'fab fa-docker', 'fab fa-php'],
+      awards: [
+        'Many Coursera courses from @VsIG and @gazinaft',
+        'Hacktoberfest 2020',
+        'INT20H'
+      ],
       projects: [],
       members: [],
       loading: true
     }
   },
   components: {
-    Navbar, About, Projects, Members, Skills, Interests, Loader
+    Navbar, About, Projects, Members, Skills, Interests, Awards, Loader
   }
 }
 </script>
