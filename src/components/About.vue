@@ -7,7 +7,7 @@
       </h1>
       <div class="subheading mb-5">
         03056 Politekhnichna Street · Kyiv ·
-        <a href="mailto:mezgoodle@gmail.com">mezgoodle@gmail.com</a>
+        <a href="mailto:mezidiaofficial@gmail.com">mezidiaofficial@gmail.com</a>
       </div>
       <p class="lead mb-5">We are the young organization of smart, creative and interesting people. Every day we learn something new, create and improve ourselves. We also like to have fun together and play. And We make applications for people.</p>
       <div class="social-icons">

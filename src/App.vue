@@ -16,6 +16,16 @@
         v-bind:projects="projects"
       />
       <p v-else>No projects</p>
+      <hr class="m-0" />
+      <Loader
+        v-if="loading"
+      />
+      <Members
+        v-else-if="members.length"
+        v-bind:members="members"
+      />
+      <p v-else>No members</p>
+      <hr class="m-0" />
     </div>
   </div>
 </template>
@@ -24,6 +34,7 @@
 import Navbar from '@/components/Navbar.vue'
 import About from '@/components/About.vue'
 import Projects from '@/components/Projects.vue'
+import Members from '@/components/Members.vue'
 import Loader from '@/components/Loader.vue'
 export default {
   name: 'App',
@@ -33,8 +44,27 @@ export default {
       .then(json => {
         setTimeout(() => {
           this.projects = json
-          this.loading = false
         }, 1000)
+      })
+    fetch('https://api.github.com/orgs/mezidia/members')
+      .then(response => response.json())
+      .then(json => {
+        for (const member of json) {
+          fetch(member.url)
+            .then(response => response.json())
+            .then(json => {
+              setTimeout(() => {
+                this.members.push({
+                  login: json.login,
+                  name: json.name,
+                  avatar_url: json.avatar_url,
+                  html_url: json.html_url,
+                  bio: json.bio
+                })
+                this.loading = false
+              }, 1000)
+            })
+        }
       })
   },
   data () {
@@ -54,14 +84,12 @@ export default {
         { link: 'https://www.facebook.com/profile.php?id=100005721694357', title: 'Maxim Facebook profile', icon_class: 'fab fa-facebook-f' }
       ],
       projects: [],
+      members: [],
       loading: true
     }
   },
   components: {
-    Navbar,
-    About,
-    Projects,
-    Loader
+    Navbar, About, Projects, Members, Loader
   }
 }
 </script>
