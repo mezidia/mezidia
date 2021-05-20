@@ -11,4 +11,4 @@ jobs:
       with:
         username: 'mezidia'
         reponame: 'mezidia'
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.TOKEN }}
