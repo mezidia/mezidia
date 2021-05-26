@@ -1,6 +1,6 @@
 <h1 id="project-title" align="center">
   mezidia <img alt="logo" width="40" height="40" src="https://raw.githubusercontent.com/mezgoodle/images/master/MezidiaLogoTransparent.png" /><br>
-  <img alt="language" src="https://img.shields.io/badge/language-python-brightgreen?style=flat-square" />
+  <img alt="language" src="https://img.shields.io/badge/language-javascript-brightgreen?style=flat-square" />
   <img alt="language" src="https://img.shields.io/github/issues/mezidia/mezidia?style=flat-square" />
   <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed/mezidia/mezidia?style=flat-square" />
   <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/mezidia/mezidia?style=flat-square" />
@@ -14,21 +14,6 @@
  🌟The general site of organization🌟
 </p>
 
-<h2 align="center">
-  <i>Table of contents</i>
-</h2>
-
-- [Project title](#project-title)
-- [Motivation :exclamation:](#motivation-exclamation)
-- [Badges :mega:](#badges-mega)
-- [Code style :scroll:](#code-style-scroll)
-- [Screenshots :camera:](#screenshots-camera)
-- [Tech/framework used :wrench:](#techframework-used-wrench)
-- [Fast usage :dash:](#fast-usage-dash)
-- [Contribute :running:](#contribute-running)
-- [Credits :cat::handshake:](#credits-cathandshake)
-- [License :bookmark:](#license-bookmark)
-
 ## Motivation :exclamation:
 
 Every organization has a website. So we made it too.😊
@@ -38,7 +23,7 @@ Every organization has a website. So we made it too.😊
 Other badges
 
 [![Theme](https://img.shields.io/badge/Organization-Mezidia-brightgreen?style=flat-square)](https://github.com/mezidia)
-[![Theme](https://img.shields.io/badge/Platform-Django-brightgreen?style=flat-square)](https://www.djangoproject.com/)
+[![Theme](https://img.shields.io/badge/Platform-VueJS-brightgreen?style=flat-square)](https://v3.vuejs.org/)
 
 ## Code style :scroll:
 
@@ -69,8 +54,8 @@ We are using [Codacy](https://www.codacy.com/) to automate our code quality.
 **Built with**
 
 - [Bootstrap](https://getbootstrap.com/)
-- [Django](https://www.djangoproject.com/)
-- [Google Fonts](https://fonts.google.com/)
+- [VueJS](https://v3.vuejs.org/)
+- [EmailJS](https://www.emailjs.com/)
 
 ## Fast usage :dash:
 
