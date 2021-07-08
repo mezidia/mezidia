@@ -25,12 +25,6 @@ Other badges
 [![Theme](https://img.shields.io/badge/Organization-Mezidia-brightgreen?style=flat-square)](https://github.com/mezidia)
 [![Theme](https://img.shields.io/badge/Platform-VueJS-brightgreen?style=flat-square)](https://v3.vuejs.org/)
 
-## Code style :scroll:
-
-We are using [Codacy](https://www.codacy.com/) to automate our code quality.
-
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/68a90233ef344065bcafe825b219be95)](https://www.codacy.com/gh/mezidia/mezidia/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mezidia/mezidia&amp;utm_campaign=Badge_Grade)
-
 ## Screenshots :camera:
 
 - Index page
