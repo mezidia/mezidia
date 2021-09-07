@@ -105,7 +105,7 @@ export default {
         { link: 'https://github.com/mezidia/mezidia-inspector', name: 'mezidia-inspector' },
         { link: 'https://github.com/mezidia/SIGame', name: 'SIGame' },
         { link: 'https://github.com/mezidia/pet_detector', name: 'pet-detector' },
-        { link: 'https://github.com/mezidia/grechka.com', name: 'grechka.com' },
+        { link: 'https://github.com/mezidia/grechka.com', name: 'grechka.com' }
       ],
       skills: ['fab fa-html5', 'fab fa-css3-alt', 'fab fa-js-square', 'fab fa-react', 'fab fa-node-js', 'fab fa-npm',
         'fab fa-python', 'fab fa-unity', 'fab fa-android', 'fab fa-docker', 'fab fa-php'],
