@@ -6,6 +6,7 @@
     <div class="container-fluid p-0">
       <About
         v-bind:icons="aboutIcons"
+        v-bind:projects="aboutProjects"
       />
       <hr class="m-0" />
       <Loader
@@ -97,6 +98,14 @@ export default {
         { link: 'https://github.com/mezidia', title: 'About', icon_class: 'fab fa-github' },
         { link: 'https://t.me/sylvenis', title: 'Maxim Telegram profile', icon_class: 'fab fa-telegram' },
         { link: 'https://www.facebook.com/profile.php?id=100005721694357', title: 'Maxim Facebook profile', icon_class: 'fab fa-facebook-f' }
+      ],
+      aboutProjects: [
+        { link: 'https://github.com/mezidia/song-helper', name: 'song-helper' },
+        { link: 'https://github.com/mezidia/Telegramia', name: 'Telegramia' },
+        { link: 'https://github.com/mezidia/mezidia-inspector', name: 'mezidia-inspector' },
+        { link: 'https://github.com/mezidia/SIGame', name: 'SIGame' },
+        { link: 'https://github.com/mezidia/pet_detector', name: 'pet-detector' },
+        { link: 'https://github.com/mezidia/grechka.com', name: 'grechka.com' },
       ],
       skills: ['fab fa-html5', 'fab fa-css3-alt', 'fab fa-js-square', 'fab fa-react', 'fab fa-node-js', 'fab fa-npm',
         'fab fa-python', 'fab fa-unity', 'fab fa-android', 'fab fa-docker', 'fab fa-php'],

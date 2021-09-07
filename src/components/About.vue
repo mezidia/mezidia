@@ -11,12 +11,10 @@
       </div>
       <p class="lead mb-5">We are the young organization of smart, creative and interesting people. Every day we learn something new, create and improve ourselves. We also like to have fun together and play. And We make applications for people. If you are new here and want to join our team, first fill out the <a href="#newMembers">form</a> and view our working projects:
         <ul>
-          <li><a href="https://github.com/mezidia/song-helper" target="_blank">song-helper</a></li>
-          <li><a href="https://github.com/mezidia/Telegramia" target="_blank">Telegramia</a></li>
-          <li><a href="https://github.com/mezidia/mezidia-inspector" target="_blank">mezidia-inspector</a></li>
-          <li><a href="https://github.com/mezidia/SIGame" target="_blank">SIGame</a></li>
-          <li><a href="https://github.com/mezidia/pet_detector" target="_blank">pet-detector</a></li>
-          <li><a href="https://github.com/mezidia/grechka.com" target="_blank">grechka.com</a></li>
+          <AboutProject
+            v-for="project of projects" :key="project"
+            v-bind:project="project"
+          />
         </ul>
       </p>
       <div class="social-icons">
@@ -31,10 +29,12 @@
 
 <script>
 import AboutIcon from '@/components/AboutIcon'
+import AboutProject from '@/components/AboutProject'
 export default {
-  props: ['icons'],
+  props: ['icons', 'projects'],
   components: {
-    AboutIcon
+    AboutIcon,
+    AboutProject
   }
 }
 </script>
