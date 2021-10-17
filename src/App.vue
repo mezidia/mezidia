@@ -112,6 +112,7 @@ export default {
       awards: [
         'Many Coursera courses from @VsIG and @gazinaft',
         'Hacktoberfest 2020',
+        'Hacktoberfest 2021',
         'INT20H'
       ],
       projects: [],
